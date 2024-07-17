@@ -1,0 +1,3 @@
+datasets/*
+output/*
+s2s_ft/__pycache__/
