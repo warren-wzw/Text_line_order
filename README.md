@@ -1,18 +1,22 @@
-# 项目介绍
-以行为单位的阅读顺序预测
+# Introduce
+Line-Level Reading Order Detection Based on BERT
 
-## 有哪些功能？
-* 仅采用文本框的坐标以及宽高信息；
-* 采用了属性嵌入包括文本、标题、图注
-* 提供预训练模型进行微调
+## Functions
+* This algorithm can reorder unordered sequences of text lines extracted from structurally complex text images, even those with skewed text images. Compared to other algorithms, this approach has lower complexity and produces a reconstructed order that more closely aligns with human reading habits.
+* This model mainly consists of three parts: input embedding layer, encoder, and decoder. The embedding layer receives the four vertex coordinates of the text bounding boxes and text attributes as input information. The encoder uses a bidirectional encoding Bert to extract features of the unordered text lines. Finally, a fully connected network with a self-attention mechanism is used as the decoder to predict the text line sequence step by step.
 
-##环境搭建
+## Model Architecture
+![](./images/Fig2.png)
+
+## Show
+![](./images/Fig1.png)
+![](./images/Fig7.png)
+## Env set
 * cuda               11.8
 * python             3.8.0
 * conda create --name linereader python=3.8.0
-* 具体请参考requierment.txt
+* Detail please reference requierment.txt
 
-## 关于作者
+## About author
 * warren@伟
-* 研二在读
-* 个人博客：[CSDN-warren@伟](https://blog.csdn.net/warren103098?type=blog)
+* Blog：[CSDN](https://blog.csdn.net/warren103098?type=blog)
