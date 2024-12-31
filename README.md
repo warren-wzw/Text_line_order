@@ -11,6 +11,7 @@ Line-Level Reading Order Detection Based on BERT
 ## Show
 ![](./images/3.png)
 ![](./images/4.png)
+![](./images/5.png)
 ## Env set
 * cuda               11.8
 * python             3.8.0
