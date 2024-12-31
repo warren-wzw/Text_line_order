@@ -6,11 +6,11 @@ Line-Level Reading Order Detection Based on BERT
 * This model mainly consists of three parts: input embedding layer, encoder, and decoder. The embedding layer receives the four vertex coordinates of the text bounding boxes and text attributes as input information. The encoder uses a bidirectional encoding Bert to extract features of the unordered text lines. Finally, a fully connected network with a self-attention mechanism is used as the decoder to predict the text line sequence step by step.
 
 ## Model Architecture
-![](./images/Fig2.png)
-
+![](./images/1.png)
+![](./images/2.png)
 ## Show
-![](./images/Fig1.png)
-![](./images/Fig7.png)
+![](./images/3.png)
+![](./images/4.png)
 ## Env set
 * cuda               11.8
 * python             3.8.0
